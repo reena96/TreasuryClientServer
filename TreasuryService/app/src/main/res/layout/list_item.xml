@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_weight="0.06"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/_id"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="right"
+        android:text="ID"/>
+
+    <TextView
+        android:layout_weight="0.09"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/year"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        android:text="year"/>
+
+    <TextView
+        android:layout_weight="0.12"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/month"
+        android:layout_gravity="right"
+        android:text="Month"/>
+
+    <TextView
+        android:layout_weight="0.09"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/day"
+        android:layout_gravity="right"
+        android:text="day"/>
+
+    <TextView
+        android:layout_weight="0.23"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/dayOfWeek"
+        android:layout_gravity="right"
+        android:text="DayWeek"/>
+    <TextView
+        android:layout_weight="0.205"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/dayOpenAmt"
+        android:layout_gravity="right"
+        android:text="OpenAmt"/>
+
+    <TextView
+        android:layout_weight="0.205"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/dayCloseAmt"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="right"
+        android:text="CloseAmt"/>
+
+</LinearLayout>

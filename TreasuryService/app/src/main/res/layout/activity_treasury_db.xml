@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/insert"
+        android:text="Create Database"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/read"
+        android:text="Read values from Database"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_weight="0.06"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/_id"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="right"
+            android:textStyle="bold"
+            android:text="No"/>
+
+        <TextView
+            android:layout_weight="0.09"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/year"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:text="Year"/>
+
+        <TextView
+            android:layout_weight="0.12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/month"
+            android:layout_gravity="right"
+            android:textStyle="bold"
+            android:text="Month"/>
+
+        <TextView
+            android:layout_weight="0.09"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/day"
+            android:layout_gravity="right"
+            android:textStyle="bold"
+            android:text="Day"/>
+
+        <TextView
+            android:layout_weight="0.23"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/dayOfWeek"
+            android:layout_gravity="right"
+            android:textStyle="bold"
+            android:text="Name"/>
+        <TextView
+            android:layout_weight="0.205"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/dayOpenAmt"
+            android:layout_gravity="right"
+            android:textStyle="bold"
+            android:text="Open Amt"/>
+
+        <TextView
+            android:layout_weight="0.205"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/dayCloseAmt"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right"
+            android:textStyle="bold"
+            android:text="Close Amt"/>
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
